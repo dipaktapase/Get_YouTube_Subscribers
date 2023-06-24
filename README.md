@@ -6,7 +6,7 @@
 
 ## Deployed Link
 
-// Need to be added
+https://get-you-tube-subscribers-dipaktapase.vercel.app/
 
 ## Content
 
@@ -14,7 +14,7 @@
 - [Features](#features)
 - [Technologies](#technologies-and-tools)
 - [Installation and Setup](#installation-and-setup)
-- [Conclusion](#conclusion)
+- [API Endpoints](#api-endpoints)
 
 ## Introduction
 
@@ -23,7 +23,7 @@ Users can see all subscribers and their information like their name, and the cha
 
 ## Features
 
-- Users can search all the subscribers.
+- Users can get all the subscribers.
 - Users can fetch only names and subscribed channels.
 - Users can search subscribers by their id.
 
@@ -46,11 +46,26 @@ Installation:
 
 To Start Server:
 
-`node src/index.js`
+`npm run start`
 
 To Visit App:
 
 `localhost:3000/`
+
+## API Endpoints
+
+1. GET http://localhost:3000/ → Returns home page where all routes are mentioned with the interactive layout. 
+
+2. GET http://localhost:3000/subscribers → Returns an array containing all the subscribers stored in the database.
+
+3. GET http://localhost:3000/subscribers/names → Returns an array of subscribers with only two fields name and subscribedChannel
+
+4. GET http://localhost:3000/subscribers/:id → Returns the details of a subscriber based on the provided ID.
+
+5. GET http://localhost:3000/subscribers/random-id → Error management for invalid ID.
+
+6. GEt http://localhost:3000/something → Returns error message of Page Not Found.
+
 
 ## Note
 
