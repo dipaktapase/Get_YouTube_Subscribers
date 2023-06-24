@@ -7,19 +7,25 @@
   <style>
     body {
       background-image: radial-gradient(circle, #fd6585, #0d25b9);
+      height: 97vh;
     }
 
     div {
-      margin: 10%;
-    }
-
-    img {
-      margin-top: 10%;
-      margin-left: 40%;
-    }
-
-    h1 {
+      display: block;
       text-align: center;
+      font-size: large;
+    }
+
+    .logo {
+      margin-top: 8%;
+    }
+
+    .apilist {
+      text-align: left;
+      list-style-position: inside;
+      margin-left: 25%;
+      margin-right: 25%;
+
     }
 
     hr {
@@ -29,18 +35,11 @@
 
     h3 {
       color: #0E2954;
-      text-align: center;
     }
 
     li {
       margin-bottom: 10px;
       color: #0E2954;
-    }
-
-    ul {
-      align-content: center;
-      margin-left: 25%;
-      margin-right: 25%;
     }
 
     a {
@@ -56,7 +55,6 @@
     }
 
     h2 {
-      text-align: center;
       text-decoration-line: underline;
       color: thistle;
       margin-bottom: auto;
@@ -64,14 +62,14 @@
   </style>
 
 <body>
-  <!-- <div> -->
-    <img
+  <div>
+    <img class="logo"
       src="https://www.almabetter.com/_next/image?url=https%3A%2F%2Falmablog-media.s3.ap-south-1.amazonaws.com%2Fimage_19400_1_5042248765.png&w=256&q=75"
       alt="logo" />
     <h1>Get YouTube Subscribers</h1>
-    <hr/>
+    <hr />
     <h3>The APIs routes are given below:</h3>
-    <ul>
+    <ul class="apilist">
       <li>
         GET <a href="/subscribers">/subscribers</a>: Returns an array containing all the
         subscribers stored in the database.
@@ -88,8 +86,8 @@
         GET <a href="/subscribers/6492345c9d3ff3241d38d2">/subscribers/random-id</a>: Error manangement for invalid ID.
       </li>
     </ul>
-  <!-- </div> -->
-  <h2>Project is made by Dipak Tapase</h4>
+    <h2>Project is made by Dipak Tapase</h4>
+  </div>
 </body>
 
 </html>
