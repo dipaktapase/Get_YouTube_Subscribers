@@ -19,7 +19,7 @@ https://get-you-tube-subscribers-dipaktapase.vercel.app/
 ## Introduction
 
 Get YouTube subscribers is a backend project that is designed to fetch data using APIs. In this project, we use technologies like ExpressJs, NodeJs, and MongoDB.
-Users can see all subscribers and their information like their name, and the channel they subscribed to in JSON format. Users can either select the page which is displayed on the home or can enter the URL manually.
+Users can see all subscribers and their information like their name, and the channel they subscribed to in JSON format. Users can either select the page which is displayed on the home or can enter the URL manually to fetch data from the database.
 
 ## Features
 
@@ -64,7 +64,7 @@ To Visit App:
 
 5. GET http://localhost:3000/subscribers/random-id → Error management for invalid ID.
 
-6. GEt http://localhost:3000/something → Returns error message of Page Not Found.
+6. GET http://localhost:3000/something → Returns error message of Page Not Found.
 
 
 ## Note
